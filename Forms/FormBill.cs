@@ -38,7 +38,8 @@ namespace Forms
 
             foreach (var orderType in types)
             {
-                comboboxControl1.AddToList(orderType.ToString());
+                comboBox1.Items.Add(orderType);
+/*                comboboxControl1.AddToList(orderType.ToString());*/
                 
             }
 
@@ -55,7 +56,7 @@ namespace Forms
                     {
                         comboboxControlWaiter.SelectedValue = view.WaiterFullName;
                         textBoxDescription.Text = view.Info;
-                        comboboxControl1.SelectedValue = view.Type.ToString();
+                        comboBox1.SelectedValue = view.Type.ToString();
                         if (view.Sum.Equals("0"))
                         {
                             input_Component1.TextBox_Text = null;
@@ -103,7 +104,7 @@ namespace Forms
                     sum = Convert.ToInt32(input_Component1.TextBox_Text);
                 }
                 OrderType type;
-                if (Enum.TryParse(comboboxControl1.SelectedText, out OrderType myStatus))
+                if (Enum.TryParse(comboBox1.SelectedText, out OrderType myStatus))
                 {
                     type = myStatus;
                 }
