@@ -1,0 +1,15 @@
+C:\Users\pavlo\source\repos\PavlovaComponents\PavlovaComponents\bin\Debug\netcoreapp3.1\PavlovaComponents.deps.json
+C:\Users\pavlo\source\repos\PavlovaComponents\PavlovaComponents\bin\Debug\netcoreapp3.1\PavlovaComponents.dll
+C:\Users\pavlo\source\repos\PavlovaComponents\PavlovaComponents\bin\Debug\netcoreapp3.1\PavlovaComponents.pdb
+C:\Users\pavlo\source\repos\PavlovaComponents\PavlovaComponents\obj\Debug\netcoreapp3.1\PavlovaComponents.ComboboxControl.resources
+C:\Users\pavlo\source\repos\PavlovaComponents\PavlovaComponents\obj\Debug\netcoreapp3.1\PavlovaComponents.ListBoxControl.resources
+C:\Users\pavlo\source\repos\PavlovaComponents\PavlovaComponents\obj\Debug\netcoreapp3.1\PavlovaComponents.TextBoxControl.resources
+C:\Users\pavlo\source\repos\PavlovaComponents\PavlovaComponents\obj\Debug\netcoreapp3.1\PavlovaComponents.csproj.GenerateResource.cache
+C:\Users\pavlo\source\repos\PavlovaComponents\PavlovaComponents\obj\Debug\netcoreapp3.1\PavlovaComponents.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pavlo\source\repos\PavlovaComponents\PavlovaComponents\obj\Debug\netcoreapp3.1\PavlovaComponents.AssemblyInfoInputs.cache
+C:\Users\pavlo\source\repos\PavlovaComponents\PavlovaComponents\obj\Debug\netcoreapp3.1\PavlovaComponents.AssemblyInfo.cs
+C:\Users\pavlo\source\repos\PavlovaComponents\PavlovaComponents\obj\Debug\netcoreapp3.1\PavlovaComponents.csproj.CoreCompileInputs.cache
+C:\Users\pavlo\source\repos\PavlovaComponents\PavlovaComponents\obj\Debug\netcoreapp3.1\PavlovaComponents.dll
+C:\Users\pavlo\source\repos\PavlovaComponents\PavlovaComponents\obj\Debug\netcoreapp3.1\PavlovaComponents.pdb
+C:\Users\pavlo\source\repos\PavlovaComponents\PavlovaComponents\obj\Debug\netcoreapp3.1\PavlovaComponents.TreeView.resources
+C:\Users\pavlo\source\repos\PavlovaComponents\PavlovaComponents\obj\Debug\netcoreapp3.1\PavlovaComponents.csproj.AssemblyReference.cache

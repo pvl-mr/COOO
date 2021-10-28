@@ -1,0 +1,9 @@
+C:\Users\pavlo\source\repos\PavlovaComponents\BusinessLogics\bin\Debug\netcoreapp3.1\BusinessLogics.deps.json
+C:\Users\pavlo\source\repos\PavlovaComponents\BusinessLogics\bin\Debug\netcoreapp3.1\BusinessLogics.dll
+C:\Users\pavlo\source\repos\PavlovaComponents\BusinessLogics\bin\Debug\netcoreapp3.1\BusinessLogics.pdb
+C:\Users\pavlo\source\repos\PavlovaComponents\BusinessLogics\obj\Debug\netcoreapp3.1\BusinessLogics.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pavlo\source\repos\PavlovaComponents\BusinessLogics\obj\Debug\netcoreapp3.1\BusinessLogics.AssemblyInfoInputs.cache
+C:\Users\pavlo\source\repos\PavlovaComponents\BusinessLogics\obj\Debug\netcoreapp3.1\BusinessLogics.AssemblyInfo.cs
+C:\Users\pavlo\source\repos\PavlovaComponents\BusinessLogics\obj\Debug\netcoreapp3.1\BusinessLogics.csproj.CoreCompileInputs.cache
+C:\Users\pavlo\source\repos\PavlovaComponents\BusinessLogics\obj\Debug\netcoreapp3.1\BusinessLogics.dll
+C:\Users\pavlo\source\repos\PavlovaComponents\BusinessLogics\obj\Debug\netcoreapp3.1\BusinessLogics.pdb

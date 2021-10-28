@@ -1,0 +1,13 @@
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\bin\Debug\netstandard2.0\DatabaseImplement.deps.json
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\bin\Debug\netstandard2.0\DatabaseImplement.dll
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\bin\Debug\netstandard2.0\DatabaseImplement.pdb
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\bin\Debug\netstandard2.0\BusinessLogics.dll
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\bin\Debug\netstandard2.0\BusinessLogics.pdb
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\obj\Debug\netstandard2.0\DatabaseImplement.csproj.AssemblyReference.cache
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\obj\Debug\netstandard2.0\DatabaseImplement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\obj\Debug\netstandard2.0\DatabaseImplement.AssemblyInfoInputs.cache
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\obj\Debug\netstandard2.0\DatabaseImplement.AssemblyInfo.cs
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\obj\Debug\netstandard2.0\DatabaseImplement.csproj.CoreCompileInputs.cache
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\obj\Debug\netstandard2.0\DatabaseImplement.csproj.CopyComplete
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\obj\Debug\netstandard2.0\DatabaseImplement.dll
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\obj\Debug\netstandard2.0\DatabaseImplement.pdb

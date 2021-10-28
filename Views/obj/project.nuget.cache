@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "4eUaa/JEDBgzOdnWQzW9US9QUN7fX+6b/0waPfiC9itdlb7n8l3skbgjv89V3+Cj1C5MJjPC75jV1FWhJ4RSuA==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\pavlo\\source\\repos\\PavlovaComponents\\Views\\Views.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Невозможно прочитать сведения о проекте для \"Views\": Идентификатор платформы \"\" недопустим."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\bin\Debug\netcoreapp3.1\DatabaseImplement.deps.json
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\bin\Debug\netcoreapp3.1\DatabaseImplement.runtimeconfig.json
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\bin\Debug\netcoreapp3.1\DatabaseImplement.runtimeconfig.dev.json
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\bin\Debug\netcoreapp3.1\DatabaseImplement.dll
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\bin\Debug\netcoreapp3.1\DatabaseImplement.pdb
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\bin\Debug\netcoreapp3.1\BusinessLogics.dll
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\bin\Debug\netcoreapp3.1\BusinessLogics.pdb
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\obj\Debug\netcoreapp3.1\DatabaseImplement.csproj.AssemblyReference.cache
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\obj\Debug\netcoreapp3.1\DatabaseImplement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\obj\Debug\netcoreapp3.1\DatabaseImplement.AssemblyInfoInputs.cache
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\obj\Debug\netcoreapp3.1\DatabaseImplement.AssemblyInfo.cs
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\obj\Debug\netcoreapp3.1\DatabaseImplement.csproj.CoreCompileInputs.cache
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\obj\Debug\netcoreapp3.1\DatabaseImplement.csproj.CopyComplete
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\obj\Debug\netcoreapp3.1\DatabaseImplement.dll
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\obj\Debug\netcoreapp3.1\DatabaseImplement.pdb
+C:\Users\pavlo\source\repos\PavlovaComponents\DatabaseImplement\obj\Debug\netcoreapp3.1\DatabaseImplement.genruntimeconfig.cache

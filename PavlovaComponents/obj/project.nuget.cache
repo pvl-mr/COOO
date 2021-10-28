@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "4Af4zZ2rSkRYwSkvIV8iQBrcJNzpCiYx/PQdeXItebaBGV8ED5vQ9wtIjcepxxdJAurMJv2qzlluXM2giUf6aQ==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\pavlo\\source\\repos\\PavlovaComponents\\PavlovaComponents\\PavlovaComponents.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Невозможно прочитать сведения о проекте для \"PavlovaComponents\": Идентификатор платформы \"\" недопустим."
+    }
+  ]
+}
