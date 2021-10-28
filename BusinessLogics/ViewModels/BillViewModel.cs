@@ -32,6 +32,6 @@ namespace BusinessLogics.ViewModels
         /// Сумма заказа
         /// </summary>
         [DisplayName("Сумма заказа")]
-        public decimal? Sum { get; set; }
+        public string Sum { get; set; }
     }
 }

@@ -39,6 +39,8 @@ namespace Forms
             this.созданиеДоктаСДиаграммойToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.treeView = new PavComponents.TreeView();
             this.excelText1 = new PavComponents.ExcelText(this.components);
+            this.word_Custom_Table_Component1 = new PavComponents.Word_Custom_Table_Component(this.components);
+            this.shPDFChart1 = new PavComponents.ShPDFChart(this.components);
             this.contextMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +55,7 @@ namespace Forms
             this.создатьДоктСНастраиваемойТаблицейToolStripMenuItem,
             this.созданиеДоктаСДиаграммойToolStripMenuItem});
             this.contextMenuStrip.Name = "contextMenuStrip";
-            this.contextMenuStrip.Size = new System.Drawing.Size(418, 148);
+            this.contextMenuStrip.Size = new System.Drawing.Size(418, 176);
             // 
             // создатьНовыйСчётToolStripMenuItem
             // 
@@ -93,6 +95,7 @@ namespace Forms
             this.создатьДоктСНастраиваемойТаблицейToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
             this.создатьДоктСНастраиваемойТаблицейToolStripMenuItem.Size = new System.Drawing.Size(417, 24);
             this.создатьДоктСНастраиваемойТаблицейToolStripMenuItem.Text = "Создать док-т с настраиваемой таблицей";
+            this.создатьДоктСНастраиваемойТаблицейToolStripMenuItem.Click += new System.EventHandler(this.создатьДоктСНастраиваемойТаблицейToolStripMenuItem_Click);
             // 
             // созданиеДоктаСДиаграммойToolStripMenuItem
             // 
@@ -100,6 +103,7 @@ namespace Forms
             this.созданиеДоктаСДиаграммойToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
             this.созданиеДоктаСДиаграммойToolStripMenuItem.Size = new System.Drawing.Size(417, 24);
             this.созданиеДоктаСДиаграммойToolStripMenuItem.Text = "Создание док-та с диаграммой";
+            this.созданиеДоктаСДиаграммойToolStripMenuItem.Click += new System.EventHandler(this.созданиеДоктаСДиаграммойToolStripMenuItem_Click);
             // 
             // treeView
             // 
@@ -140,5 +144,7 @@ namespace Forms
         private System.Windows.Forms.ToolStripMenuItem создатьДоктСНастраиваемойТаблицейToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem созданиеДоктаСДиаграммойToolStripMenuItem;
         private PavComponents.ExcelText excelText1;
+        private PavComponents.Word_Custom_Table_Component word_Custom_Table_Component1;
+        private PavComponents.ShPDFChart shPDFChart1;
     }
 }

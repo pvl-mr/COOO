@@ -25,7 +25,7 @@ namespace PavComponents
             InitializeComponent();
         }
 
-        public bool CreateExcel(string fileName, string title, string[] text)
+        public void CreateExcel(string fileName, string title, string[] text)
         {
             if (string.IsNullOrEmpty(fileName))
                 throw new ArgumentException("Не указан путь к файлу");

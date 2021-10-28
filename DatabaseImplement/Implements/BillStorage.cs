@@ -31,7 +31,7 @@ namespace DatabaseImplement.Implements
                         WaiterFullName = bill.Waiter.WaiterFullName,
                         Type = bill.Type,
                         Info = bill.Info,
-                        Sum = bill.Sum
+                        Sum = bill.Sum.ToString()
                     })
                     .ToList();
             }
@@ -61,7 +61,7 @@ namespace DatabaseImplement.Implements
                         WaiterFullName = bill.Waiter.WaiterFullName,
                         Type = bill.Type,
                         Info = bill.Info,
-                        Sum = bill.Sum
+                        Sum = bill.Sum.ToString()
                     })
                 .ToList();
             }
@@ -91,7 +91,7 @@ namespace DatabaseImplement.Implements
                         WaiterFullName = tempBill.Waiter.WaiterFullName,
                         Type = tempBill.Type,
                         Info = tempBill.Info,
-                        Sum = tempBill.Sum
+                        Sum = tempBill.Sum.ToString()
                     } : null;
             }
         }

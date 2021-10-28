@@ -4,3 +4,16 @@ C:\Users\pavlo\source\repos\PavlovaComponents\PavComponents\bin\Debug\PavCompone
 C:\Users\pavlo\source\repos\PavlovaComponents\PavComponents\obj\Debug\PavComponents.dll
 C:\Users\pavlo\source\repos\PavlovaComponents\PavComponents\obj\Debug\PavComponents.pdb
 C:\Users\pavlo\source\repos\PavlovaComponents\PavComponents\obj\Debug\PavComponents.csproj.AssemblyReference.cache
+C:\Users\pavlo\source\repos\PavlovaComponents\PavComponents\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\pavlo\source\repos\PavlovaComponents\PavComponents\bin\Debug\itextsharp.dll
+C:\Users\pavlo\source\repos\PavlovaComponents\PavComponents\bin\Debug\LiveCharts.dll
+C:\Users\pavlo\source\repos\PavlovaComponents\PavComponents\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\pavlo\source\repos\PavlovaComponents\PavComponents\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\pavlo\source\repos\PavlovaComponents\PavComponents\bin\Debug\itextsharp.xml
+C:\Users\pavlo\source\repos\PavlovaComponents\PavComponents\bin\Debug\LiveCharts.pdb
+C:\Users\pavlo\source\repos\PavlovaComponents\PavComponents\bin\Debug\LiveCharts.xml
+C:\Users\pavlo\source\repos\PavlovaComponents\PavComponents\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\pavlo\source\repos\PavlovaComponents\PavComponents\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\pavlo\source\repos\PavlovaComponents\PavComponents\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\pavlo\source\repos\PavlovaComponents\PavComponents\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\pavlo\source\repos\PavlovaComponents\PavComponents\obj\Debug\PavComponents.csproj.CopyComplete
