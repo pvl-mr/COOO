@@ -17,7 +17,7 @@ namespace BusinessLogics.BindingModels
         /// <summary>
         /// Тип заказа
         /// </summary>
-        public OrderType Type { get; set; }
+        public string Type { get; set; }
         /// <summary>
         /// ID официанта
         /// </summary>

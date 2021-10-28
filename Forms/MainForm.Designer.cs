@@ -30,7 +30,6 @@ namespace Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.treeView = new PavComponents.TreeView();
             this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.создатьНовыйСчётToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.редактироватьЗаписьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,18 +37,10 @@ namespace Forms
             this.создатьПростойДокументToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.создатьДоктСНастраиваемойТаблицейToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.созданиеДоктаСДиаграммойToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.treeView = new PavComponents.TreeView();
+            this.excelText1 = new PavComponents.ExcelText(this.components);
             this.contextMenuStrip.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // treeView
-            // 
-            this.treeView.ContextMenuStrip = this.contextMenuStrip;
-            this.treeView.Location = new System.Drawing.Point(12, 34);
-            this.treeView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.treeView.Name = "treeView";
-            this.treeView.SelectedNodeIndex = -1;
-            this.treeView.Size = new System.Drawing.Size(514, 316);
-            this.treeView.TabIndex = 0;
             // 
             // contextMenuStrip
             // 
@@ -62,7 +53,7 @@ namespace Forms
             this.создатьДоктСНастраиваемойТаблицейToolStripMenuItem,
             this.созданиеДоктаСДиаграммойToolStripMenuItem});
             this.contextMenuStrip.Name = "contextMenuStrip";
-            this.contextMenuStrip.Size = new System.Drawing.Size(418, 176);
+            this.contextMenuStrip.Size = new System.Drawing.Size(418, 148);
             // 
             // создатьНовыйСчётToolStripMenuItem
             // 
@@ -94,6 +85,7 @@ namespace Forms
             this.создатьПростойДокументToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.создатьПростойДокументToolStripMenuItem.Size = new System.Drawing.Size(417, 24);
             this.создатьПростойДокументToolStripMenuItem.Text = "Создать простой документ";
+            this.создатьПростойДокументToolStripMenuItem.Click += new System.EventHandler(this.создатьПростойДокументToolStripMenuItem_Click);
             // 
             // создатьДоктСНастраиваемойТаблицейToolStripMenuItem
             // 
@@ -108,6 +100,16 @@ namespace Forms
             this.созданиеДоктаСДиаграммойToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
             this.созданиеДоктаСДиаграммойToolStripMenuItem.Size = new System.Drawing.Size(417, 24);
             this.созданиеДоктаСДиаграммойToolStripMenuItem.Text = "Создание док-та с диаграммой";
+            // 
+            // treeView
+            // 
+            this.treeView.ContextMenuStrip = this.contextMenuStrip;
+            this.treeView.Location = new System.Drawing.Point(12, 34);
+            this.treeView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.treeView.Name = "treeView";
+            this.treeView.SelectedNodeIndex = -1;
+            this.treeView.Size = new System.Drawing.Size(514, 316);
+            this.treeView.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -137,5 +139,6 @@ namespace Forms
         private System.Windows.Forms.ToolStripMenuItem создатьПростойДокументToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem создатьДоктСНастраиваемойТаблицейToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem созданиеДоктаСДиаграммойToolStripMenuItem;
+        private PavComponents.ExcelText excelText1;
     }
 }

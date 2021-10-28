@@ -3,3 +3,4 @@ C:\Users\pavlo\source\repos\PavlovaComponents\PavComponents\bin\Debug\PavCompone
 C:\Users\pavlo\source\repos\PavlovaComponents\PavComponents\bin\Debug\PavComponents.pdb
 C:\Users\pavlo\source\repos\PavlovaComponents\PavComponents\obj\Debug\PavComponents.dll
 C:\Users\pavlo\source\repos\PavlovaComponents\PavComponents\obj\Debug\PavComponents.pdb
+C:\Users\pavlo\source\repos\PavlovaComponents\PavComponents\obj\Debug\PavComponents.csproj.AssemblyReference.cache

@@ -16,7 +16,7 @@ namespace BusinessLogics.ViewModels
         /// <summary>
         /// Тип заказа
         /// </summary>
-        public OrderType Type { get; set; }
+        public string Type { get; set; }
         /// <summary>
         /// ID официанта
         /// </summary>

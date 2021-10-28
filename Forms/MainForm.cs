@@ -56,9 +56,11 @@ namespace Forms
         {
             Queue<string> propertyNames = new Queue<string>();
             propertyNames.Enqueue("Type");
+            propertyNames.Enqueue("WaiterFullName");
+            propertyNames.Enqueue("Info");
             propertyNames.Enqueue("Sum");
             propertyNames.Enqueue("Id");
-            propertyNames.Enqueue("WaiterFullName");
+            
             treeView.SetTreeСonfiguration(propertyNames);
 
             try
@@ -125,6 +127,33 @@ namespace Forms
 
                 LoadData();
             }
+        }
+
+        private void создатьПростойДокументToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string[] bills = new string[5];
+            var myList = billLogic.Read(new BillBindingModel
+            {
+                Type = "Акционный счёт"
+            }) ;
+            for (int i = 0; i < myList.Count; i++)
+            {
+                bills[i] = myList[i].WaiterFullName + " : " + myList[i].Info;
+            }
+            /*           foreach (var book in myList)
+                       {
+                           
+                           bills.Add(book.WaiterFullName + " : " + book.Info);
+                       }*/
+            using (var d = new SaveFileDialog() { Filter = "xlsx|*.xlsx" })
+            {
+                if (d.ShowDialog() == DialogResult.OK)
+                {
+                    excelText1.CreateExcel(d.FileName,
+                    "Акционные счета", bills);
+                }
+            }
+
         }
 
         /// <summary>

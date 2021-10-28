@@ -36,12 +36,12 @@ namespace Forms
             var types = Enum.GetValues(typeof(BusinessLogics.Enums.OrderType));
             var waiters = waiterLogic.Read(null);
 
-            foreach (var orderType in types)
+            /*foreach (var orderType in types)
             {
                 comboBox1.Items.Add(orderType);
-/*                comboboxControl1.AddToList(orderType.ToString());*/
+*//*                comboboxControl1.AddToList(orderType.ToString());*//*
                 
-            }
+            }*/
 
             foreach(var waiter in waiters)
             {
@@ -56,7 +56,8 @@ namespace Forms
                     {
                         comboboxControlWaiter.SelectedValue = view.WaiterFullName;
                         textBoxDescription.Text = view.Info;
-                        comboBox1.SelectedValue = view.Type.ToString();
+                        /* comboBox1.SelectedValue = view.Type.ToString();*/
+                        textBoxType.Text = view.Type;
                         if (view.Sum.Equals("0"))
                         {
                             input_Component1.TextBox_Text = null;
@@ -103,11 +104,11 @@ namespace Forms
                 {
                     sum = Convert.ToInt32(input_Component1.TextBox_Text);
                 }
-                OrderType type;
+                /*OrderType type;
                 if (Enum.TryParse(comboBox1.SelectedText, out OrderType myStatus))
                 {
                     type = myStatus;
-                }
+                }*/
                 /////////////пофиксить
                 var waiter = waiterLogic.Read(new WaiterBindingModel() { WaiterFullName = comboboxControlWaiter.SelectedText });
                 billLogic.CreateOrUpdate(new BillBindingModel
@@ -115,7 +116,7 @@ namespace Forms
                     Id = id,
                     WaiterId = waiter[0].Id,
                     Info = textBoxDescription.Text,
-                    Type = myStatus,
+                    Type = textBoxType.Text,
                     Sum = sum
                 });
                 MessageBox.Show("Сохранение прошло успешно", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);

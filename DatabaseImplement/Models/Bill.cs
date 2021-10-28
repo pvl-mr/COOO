@@ -24,7 +24,7 @@ namespace DatabaseImplement.Models
         /// Тип заказа
         /// </summary>
         [Required]
-        public OrderType Type { get; set; }
+        public string Type { get; set; }
 
         /// <summary>
         /// Сумма заказа
