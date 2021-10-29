@@ -57,10 +57,9 @@ namespace Forms
         {
             Queue<string> propertyNames = new Queue<string>();
             propertyNames.Enqueue("Type");
-            propertyNames.Enqueue("WaiterFullName");
-            propertyNames.Enqueue("Info");
             propertyNames.Enqueue("Sum");
             propertyNames.Enqueue("Id");
+            propertyNames.Enqueue("WaiterFullName");
             
             treeView.SetTreeСonfiguration(propertyNames);
 
@@ -162,13 +161,21 @@ namespace Forms
 
                     foreach (var element in bills_data)
                     {
-                        if (element.Sum.Equals("0"))
+                        if (element.Sum.Equals("0.00"))
                         {
                             element.Sum = "По акции";
                         }
                     }
 
-                    bool result = word_Custom_Table_Component1.CreateDoc(d.FileName, "Счета", new int[] { 20, 20, 20, 20 }, new List<WordTableColumn>
+
+                    int[] height_rows = new int[billLogic.Read(null).Count+1];
+
+                    for (int i = 0; i < billLogic.Read(null).Count+1; i++) {
+                        height_rows[i] = 20;
+                    }
+
+
+                    bool result = word_Custom_Table_Component1.CreateDoc(d.FileName, "Счета", height_rows, new List<WordTableColumn>
                     {
                         new WordTableColumn {Header = "ID", Width = 40, PropertyName = "Id"},
                     new WordTableColumn {Header = "Тип заказа", Width = 100, PropertyName = "Type"},
@@ -192,29 +199,6 @@ namespace Forms
                 if (d.ShowDialog() == DialogResult.OK)
                 {
 
-                    /* bool result = word_Custom_Table_Component1.CreateDoc(d.FileName, "Счета", new int[] { 20, 20, 20, 20 }, new List<WordTableColumn>
-                     {
-                         new WordTableColumn {Header = "ID", Width = 40, PropertyName = "Id"},
-                     new WordTableColumn {Header = "Тип заказа", Width = 100, PropertyName = "Type"},
-                     new WordTableColumn {Header = "Описание", Width = 180, PropertyName = "Info"},
-                     new WordTableColumn {Header = "ФИО офицанта", Width = 100, PropertyName = "WaiterFullName"},
-                     new WordTableColumn {Header = "Стоимость", Width = 80, PropertyName = "Sum"}
-                     }, bills_data);
-                     if (result == true)
-                     {
-                         MessageBox.Show("Отчёт создан", "Сообщение",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
-                     }*/
-                    /*   var listData = billLogic.Read(null);
-                       for (int i = 0; i < listData.Count; i++)
-                       {
-                           if (!listData[i].Sum.Equals("0"))
-                           {
-                               listData.RemoveAt(i);
-                               i--;
-                           }
-                       }*/
-
                     var listData = billLogic.Read(null);
                     Dictionary<string, int> result = new Dictionary<string, int>();
 
@@ -233,34 +217,7 @@ namespace Forms
                         }
                     }
 
-                   /* var listTypes = Enum.GetValues(typeof(BusinessLogics.Enums.OrderType));
-                    Dictionary<string, int> bills = new Dictionary<string, int>();
-                    Dictionary<string, int> _bills = new Dictionary<string, int>();
-                    foreach (var element in listTypes)
-                    {
-                        bills.Add(element.ToString(), 0);
-                    }
-                    foreach (var element in listData)
-                    {
-                        if (bills.ContainsKey(element.ToString()))
-                        {
-                            bills[element.ToString()]++;
-                        }
-                    }
-                    foreach (var element in bills)
-                    {
-                        if (bills[element.Key] != 0)
-                        {
-                            _bills.Add(element.Key, element.Value);
-                        }
-                    }
-                    List<double> series = new List<double>();
-                    List<string> xseries = new List<string>();
-                    foreach (var element in _bills)
-                    {
-                        series.Add(element.Value);
-                        xseries.Add(element.Key);
-                    }*/
+                
                     shPDFChart1.CreatePDF(
                          d.FileName,
                         "Акционные счета",

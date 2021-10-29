@@ -142,5 +142,10 @@ namespace Forms
             var form = Container.Resolve<FormWaiter>();
             form.ShowDialog();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

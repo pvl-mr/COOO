@@ -52,7 +52,7 @@ namespace DatabaseImplement.Implements
             using (var context = new Database())
             {
                 return context.Bills
-                //    .Where(bill => bill.TableId == model.TableId)
+                    .Where(bill => bill.Sum == model.Sum)
                     .Include(bill => bill.Waiter)
                     .Select(bill => new BillViewModel
                     {

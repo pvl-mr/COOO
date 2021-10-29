@@ -17,7 +17,13 @@ namespace PavComponents
             get
             {
                 if (treeView.SelectedNode != null)
+                {
+                    foreach ( var node1 in treeView.Nodes)
+                    {
+                        Console.WriteLine(node1.ToString());
+                    }
                     return treeView.SelectedNode.Index;
+                }    
                 return -1;
             }
             set

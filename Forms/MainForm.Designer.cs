@@ -55,7 +55,7 @@ namespace Forms
             this.создатьДоктСНастраиваемойТаблицейToolStripMenuItem,
             this.созданиеДоктаСДиаграммойToolStripMenuItem});
             this.contextMenuStrip.Name = "contextMenuStrip";
-            this.contextMenuStrip.Size = new System.Drawing.Size(418, 176);
+            this.contextMenuStrip.Size = new System.Drawing.Size(418, 148);
             // 
             // создатьНовыйСчётToolStripMenuItem
             // 
@@ -112,14 +112,14 @@ namespace Forms
             this.treeView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.treeView.Name = "treeView";
             this.treeView.SelectedNodeIndex = -1;
-            this.treeView.Size = new System.Drawing.Size(514, 316);
+            this.treeView.Size = new System.Drawing.Size(514, 412);
             this.treeView.TabIndex = 0;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(538, 360);
+            this.ClientSize = new System.Drawing.Size(538, 451);
             this.ContextMenuStrip = this.contextMenuStrip;
             this.Controls.Add(this.treeView);
             this.KeyPreview = true;
