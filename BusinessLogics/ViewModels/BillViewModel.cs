@@ -12,7 +12,7 @@ namespace BusinessLogics.ViewModels
         /// ID счета в кафе
         /// </summary>
         /// [DisplayName("Номер счета")]
-        public int? Id { get; set; }
+        public int Id { get; set; }
         /// <summary>
         /// Тип заказа
         /// </summary>

@@ -102,7 +102,9 @@ namespace Forms
         private void редактироватьЗаписьToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var form = Container.Resolve<FormBill>();
-            form.Id = treeView.SelectedNodeIndex;
+            var node = treeView.GetSelectedItem<BillViewModel>();
+            form.Elem = billLogic.Read(new BillBindingModel { Id = node.Id})[0];
+            form.Id = node.Id;
             form.ShowDialog();
             LoadData();
         }
@@ -115,7 +117,7 @@ namespace Forms
             if (MessageBox.Show("Удалить запись", "Вопрос", MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                int id = Convert.ToInt32(selectedItem);
+                int id = selectedItem.Id;
                 try
                 {
                     billLogic.Delete(new BillBindingModel() { Id = id });

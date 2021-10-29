@@ -160,7 +160,7 @@ namespace DatabaseImplement.Implements
             bill.WaiterId = model.WaiterId;
             bill.Type = model.Type.ToString();
             bill.Info = model.Info;
-            bill.Sum = model.Sum;
+            bill.Sum = (decimal)model.Sum;
             return bill;
         }
     }

@@ -29,7 +29,7 @@ namespace DatabaseImplement.Models
         /// <summary>
         /// Сумма заказа
         /// </summary>
-        public decimal? Sum { get; set; }       
+        public decimal Sum { get; set; }       
         /// <summary>
         /// Номер столика
         /// </summary>

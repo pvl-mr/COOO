@@ -63,6 +63,11 @@ namespace PavComponents
             comboBox.Items.Add(str);
         }
 
+        public void Clear()
+        {
+            comboBox.Items.Clear();
+        }
+
     }
 }
 
