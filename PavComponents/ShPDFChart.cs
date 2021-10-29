@@ -152,5 +152,10 @@ namespace PavComponents
             if (data == null || data.Count == 0)
                 throw new ArgumentException("Данные для создания диаграммы не указаны");
         }
+
+        public void CreatePDF(string fileName, string v1, string v2, object right, object p1, object p2)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

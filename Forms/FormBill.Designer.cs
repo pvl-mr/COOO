@@ -34,12 +34,12 @@ namespace Forms
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxDescription = new System.Windows.Forms.TextBox();
-            this.input_Component1 = new PavComponents.Input_Component();
             this.buttonSave = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.comboboxControlWaiter = new PavComponents.ComboboxControl();
-            this.textBoxType = new System.Windows.Forms.TextBox();
+            this.input_Component1 = new PavComponents.Input_Component();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -86,14 +86,6 @@ namespace Forms
             this.textBoxDescription.Size = new System.Drawing.Size(307, 22);
             this.textBoxDescription.TabIndex = 5;
             // 
-            // input_Component1
-            // 
-            this.input_Component1.Location = new System.Drawing.Point(117, 136);
-            this.input_Component1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.input_Component1.Name = "input_Component1";
-            this.input_Component1.Size = new System.Drawing.Size(419, 32);
-            this.input_Component1.TabIndex = 7;
-            // 
             // buttonSave
             // 
             this.buttonSave.Location = new System.Drawing.Point(541, 86);
@@ -134,19 +126,28 @@ namespace Forms
             this.comboboxControlWaiter.Size = new System.Drawing.Size(310, 28);
             this.comboboxControlWaiter.TabIndex = 11;
             // 
-            // textBoxType
+            // input_Component1
             // 
-            this.textBoxType.Location = new System.Drawing.Point(183, 83);
-            this.textBoxType.Name = "textBoxType";
-            this.textBoxType.Size = new System.Drawing.Size(310, 22);
-            this.textBoxType.TabIndex = 12;
+            this.input_Component1.Location = new System.Drawing.Point(117, 136);
+            this.input_Component1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.input_Component1.Name = "input_Component1";
+            this.input_Component1.Size = new System.Drawing.Size(419, 32);
+            this.input_Component1.TabIndex = 7;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(183, 86);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(307, 24);
+            this.comboBox1.TabIndex = 12;
             // 
             // FormBill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(677, 179);
-            this.Controls.Add(this.textBoxType);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.comboboxControlWaiter);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
@@ -178,6 +179,6 @@ namespace Forms
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private PavComponents.ComboboxControl comboboxControlWaiter;
-        private System.Windows.Forms.TextBox textBoxType;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

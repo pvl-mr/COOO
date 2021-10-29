@@ -88,6 +88,7 @@
     <Compile Include="Input_Component.Designer.cs">
       <DependentUpon>Input_Component.cs</DependentUpon>
     </Compile>
+    <Compile Include="LegendLocation.cs" />
     <Compile Include="ShPDFChart.cs">
       <SubType>Component</SubType>
     </Compile>

@@ -101,3 +101,12 @@ C:\Users\pavlo\source\repos\PavlovaComponents\Forms\obj\Debug\Forms.pdb
 C:\Users\pavlo\source\repos\PavlovaComponents\Forms\obj\Debug\Forms.FormBill.resources
 C:\Users\pavlo\source\repos\PavlovaComponents\Forms\obj\Debug\Forms.FormWaiter.resources
 C:\Users\pavlo\source\repos\PavlovaComponents\Forms\obj\Debug\Forms.MainForm.resources
+C:\Users\pavlo\source\repos\PavlovaComponents\Forms\bin\Debug\itextsharp.dll
+C:\Users\pavlo\source\repos\PavlovaComponents\Forms\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\pavlo\source\repos\PavlovaComponents\Forms\bin\Debug\LiveCharts.dll
+C:\Users\pavlo\source\repos\PavlovaComponents\Forms\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\pavlo\source\repos\PavlovaComponents\Forms\bin\Debug\itextsharp.xml
+C:\Users\pavlo\source\repos\PavlovaComponents\Forms\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\pavlo\source\repos\PavlovaComponents\Forms\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\pavlo\source\repos\PavlovaComponents\Forms\bin\Debug\LiveCharts.pdb
+C:\Users\pavlo\source\repos\PavlovaComponents\Forms\bin\Debug\LiveCharts.xml

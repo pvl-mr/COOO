@@ -158,7 +158,7 @@ namespace DatabaseImplement.Implements
         private Bill CreateModel(BillBindingModel model, Bill bill)
         {
             bill.WaiterId = model.WaiterId;
-            bill.Type = model.Type;
+            bill.Type = model.Type.ToString();
             bill.Info = model.Info;
             bill.Sum = model.Sum;
             return bill;

@@ -9,6 +9,6 @@ namespace BusinessLogics.Enums
         takeaway_food = 0,
         snack = 1,
         main_dish = 2,
-        second_dish = 3
+        second_dish = 3,
     }
 }

@@ -135,17 +135,12 @@ namespace Forms
             string[] bills = new string[5];
             var myList = billLogic.Read(new BillBindingModel
             {
-                Type = "Акционный счёт"
+                Sum = 0,
             }) ;
             for (int i = 0; i < myList.Count; i++)
             {
                 bills[i] = myList[i].WaiterFullName + " : " + myList[i].Info;
             }
-            /*           foreach (var book in myList)
-                       {
-                           
-                           bills.Add(book.WaiterFullName + " : " + book.Info);
-                       }*/
             using (var d = new SaveFileDialog() { Filter = "xlsx|*.xlsx" })
             {
                 if (d.ShowDialog() == DialogResult.OK)
@@ -192,69 +187,94 @@ namespace Forms
 
         private void созданиеДоктаСДиаграммойToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var fbd = new FolderBrowserDialog();
-            if (fbd.ShowDialog() == DialogResult.OK)
+            using (var d = new SaveFileDialog() { Filter = "pdf|*.pdf", FileName = "Bills" })
             {
-                var listData = billLogic.Read(null);
-                for (int i = 0; i < listData.Count; i++)
+                if (d.ShowDialog() == DialogResult.OK)
                 {
-                    if (!listData[i].Sum.Equals("0"))
+
+                    /* bool result = word_Custom_Table_Component1.CreateDoc(d.FileName, "Счета", new int[] { 20, 20, 20, 20 }, new List<WordTableColumn>
+                     {
+                         new WordTableColumn {Header = "ID", Width = 40, PropertyName = "Id"},
+                     new WordTableColumn {Header = "Тип заказа", Width = 100, PropertyName = "Type"},
+                     new WordTableColumn {Header = "Описание", Width = 180, PropertyName = "Info"},
+                     new WordTableColumn {Header = "ФИО офицанта", Width = 100, PropertyName = "WaiterFullName"},
+                     new WordTableColumn {Header = "Стоимость", Width = 80, PropertyName = "Sum"}
+                     }, bills_data);
+                     if (result == true)
+                     {
+                         MessageBox.Show("Отчёт создан", "Сообщение",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                     }*/
+                    /*   var listData = billLogic.Read(null);
+                       for (int i = 0; i < listData.Count; i++)
+                       {
+                           if (!listData[i].Sum.Equals("0"))
+                           {
+                               listData.RemoveAt(i);
+                               i--;
+                           }
+                       }*/
+
+                    var listData = billLogic.Read(null);
+                    Dictionary<string, int> result = new Dictionary<string, int>();
+
+                    for (int i = 0; i < Enum.GetNames(typeof(OrderType)).Length; i++)
                     {
-                        listData.RemoveAt(i);
-                        i--;
+                        result[(Enum.GetValues(typeof(OrderType)).GetValue(i)).ToString()] = 0;
                     }
+
+
+                   
+                    for (int i = 0; i < listData.Count; i++)
+                    {
+                        if (listData[i].Sum.Equals("0.00"))
+                        {
+                            result[listData[i].Type]++;
+                        }
+                    }
+
+                   /* var listTypes = Enum.GetValues(typeof(BusinessLogics.Enums.OrderType));
+                    Dictionary<string, int> bills = new Dictionary<string, int>();
+                    Dictionary<string, int> _bills = new Dictionary<string, int>();
+                    foreach (var element in listTypes)
+                    {
+                        bills.Add(element.ToString(), 0);
+                    }
+                    foreach (var element in listData)
+                    {
+                        if (bills.ContainsKey(element.ToString()))
+                        {
+                            bills[element.ToString()]++;
+                        }
+                    }
+                    foreach (var element in bills)
+                    {
+                        if (bills[element.Key] != 0)
+                        {
+                            _bills.Add(element.Key, element.Value);
+                        }
+                    }
+                    List<double> series = new List<double>();
+                    List<string> xseries = new List<string>();
+                    foreach (var element in _bills)
+                    {
+                        series.Add(element.Value);
+                        xseries.Add(element.Key);
+                    }*/
+                    shPDFChart1.CreatePDF(
+                         d.FileName,
+                        "Акционные счета",
+                        "Диаграмма счетоы",
+                        LegendLocation.Right, result
+                        
+                    );
+                    MessageBox.Show("Отчёт создан", "Сообщение",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-
-            var listGenres = genreLogic.Read(null);
-            Dictionary<string, double> books = new Dictionary<string, double>();
-            Dictionary<string, double> _books = new Dictionary<string, double>();
-            foreach (var element in listGenres)
-            {
-                books.Add(element.GenreName, 0);
             }
-            foreach (var element in listData)
-            {
-                if (books.ContainsKey(element.BookGenre))
-                {
-                    books[element.BookGenre]++;
-                }
-            }
-            foreach (var element in books)
-            {
-                if (books[element.Key] != 0)
-                {
-                    _books.Add(element.Key, element.Value);
-                }
-            }
-            List<double> series = new List<double>();
-            List<string> xseries = new List<string>();
-            foreach (var element in _books)
-            {
-                series.Add(element.Value);
-                xseries.Add(element.Key);
-            }
-            chartComponent1.CreateDocument(new ChartParameters()
-            {
-                Path = fbd.SelectedPath + FileName + ".pdf",
-                Title = "Бесплатные книги",
-                ChartName = "Диаграмма книг",
-                ChartLegendLocation = ChartLegendLocation.Right,
-                Series = series.ToArray(),
-                XSeries = xseries.ToArray()
-            });
-            MessageBox.Show("Отчёт создан", "Сообщение",
-            MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
 
-    }
-
-        /// <summary>
-        /// Срабатывает при нажатии на клавишу
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-
+    
     }
 
 }
