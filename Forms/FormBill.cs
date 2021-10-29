@@ -114,15 +114,8 @@ namespace Forms
             }
             try
             {
-/*                decimal sum = 0;
-                if (input_Component1.TextBox_Text == null)
-                {
-                    sum = 0;
-                } else
-                {
-                    sum = (decimal)input_Component1.TextBox_Text;
-                }*/
-               /* decimal sum = 0;
+
+                decimal sum = 0;
                 if (input_Component1.TextBox_Text == null)
                 {
                     sum = 0;
@@ -130,8 +123,10 @@ namespace Forms
                 else if (decimal.TryParse(input_Component1.TextBox_Text.ToString(), out decimal i))
                 {
                     sum = Convert.ToDecimal(input_Component1.TextBox_Text);
-                }*/
-                
+                }
+
+
+
                 var waiter = waiterLogic.Read(new WaiterBindingModel() { WaiterFullName = comboboxControlWaiter.SelectedText });
 
                     billLogic.CreateOrUpdate(new BillBindingModel
@@ -139,8 +134,8 @@ namespace Forms
                         Id = id,
                         WaiterId = waiter[0].Id,
                         Info = textBoxDescription.Text,
-                        Type = (OrderType)comboBox1.SelectedItem,
-                        Sum = null
+                        Type = comboBox1.SelectedItem.ToString(),
+                        Sum = sum
                     }) ;
                 
                 
