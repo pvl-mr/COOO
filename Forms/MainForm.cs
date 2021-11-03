@@ -1,6 +1,5 @@
 ﻿using BusinessLogics.BindingModels;
 using BusinessLogics.BusinessLogic;
-using BusinessLogics.Enums;
 using BusinessLogics.ViewModels;
 using PavComponents;
 using System;
@@ -18,45 +17,25 @@ namespace Forms
     {
         [Dependency]
         public new IUnityContainer Container { get; set; }
-
         private readonly BillLogic billLogic;
+        private readonly TypeLogic waiterLogic;
 
-        public MainForm(BillLogic billLogic)
+        public MainForm(BillLogic billLogic, TypeLogic waiterLogic)
         {
             InitializeComponent();
             this.billLogic = billLogic;
-            
-           
+            this.waiterLogic = waiterLogic;
         }
+
         /// <summary>
         /// Срабатывает при загрузке формы
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-
-        /*        private BillViewModel[] list =
-                    {
-                        new BillViewModel()
-                        {
-                            Id = 0,
-                            Type = OrderType.takeaway_food,
-                            WaiterFullName = "Fikk",
-                            Info = "rjkngr",
-                            Sum = 999,
-                        },
-                        new BillViewModel()
-                        {
-                            Id = 1,
-                            Type = OrderType.takeaway_food,
-                            WaiterFullName = "Fikk",
-                            Info = "rjkngr",
-                            Sum = 999,
-                        }
-                    };*/
         private void LoadData()
         {
             Queue<string> propertyNames = new Queue<string>();
-            propertyNames.Enqueue("Type");
+            propertyNames.Enqueue("TypeName");
             propertyNames.Enqueue("Sum");
             propertyNames.Enqueue("Id");
             propertyNames.Enqueue("WaiterFullName");
@@ -82,9 +61,7 @@ namespace Forms
         private void FormBills_Load_1(object sender, EventArgs e)
         {
             LoadData();
-        }
-
-        
+        }   
         private void CreateBill(object sender, EventArgs e)
         {
             var form = Container.Resolve<FormBill>();
@@ -133,7 +110,7 @@ namespace Forms
 
         private void создатьПростойДокументToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string[] bills = new string[5];
+            string[] bills = new string[6];
             var myList = billLogic.Read(new BillBindingModel
             {
                 Sum = 0,
@@ -169,7 +146,6 @@ namespace Forms
                         }
                     }
 
-
                     int[] height_rows = new int[billLogic.Read(null).Count+1];
 
                     for (int i = 0; i < billLogic.Read(null).Count+1; i++) {
@@ -180,10 +156,11 @@ namespace Forms
                     bool result = word_Custom_Table_Component1.CreateDoc(d.FileName, "Счета", height_rows, new List<WordTableColumn>
                     {
                         new WordTableColumn {Header = "ID", Width = 40, PropertyName = "Id"},
-                    new WordTableColumn {Header = "Тип заказа", Width = 100, PropertyName = "Type"},
+                    new WordTableColumn {Header = "Тип заказа", Width = 100, PropertyName = "TypeName"},
                     new WordTableColumn {Header = "Описание", Width = 180, PropertyName = "Info"},
+                    
                     new WordTableColumn {Header = "ФИО офицанта", Width = 100, PropertyName = "WaiterFullName"},
-                    new WordTableColumn {Header = "Стоимость", Width = 80, PropertyName = "Sum"}
+                        new WordTableColumn {Header = "Стоимость", Width = 80, PropertyName = "Sum"}
                     }, bills_data);
                     if (result == true)
                     {
@@ -204,26 +181,23 @@ namespace Forms
                     var listData = billLogic.Read(null);
                     Dictionary<string, int> result = new Dictionary<string, int>();
 
-                    for (int i = 0; i < Enum.GetNames(typeof(OrderType)).Length; i++)
+                    for (int i = 0; i < waiterLogic.Read(null).Count; i++)
                     {
-                        result[(Enum.GetValues(typeof(OrderType)).GetValue(i)).ToString()] = 0;
+                        result[waiterLogic.Read(null)[i].TypeName] = 0;
                     }
-
-
                    
                     for (int i = 0; i < listData.Count; i++)
                     {
                         if (listData[i].Sum.Equals("0.00"))
                         {
-                            result[listData[i].Type]++;
+                            result[listData[i].TypeName]++;
                         }
                     }
-
-                
+  
                     shPDFChart1.CreatePDF(
                          d.FileName,
                         "Акционные счета",
-                        "Диаграмма счетоы",
+                        "Диаграмма счетов",
                         LegendLocation.Right, result
                         
                     );

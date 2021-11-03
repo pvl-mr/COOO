@@ -1,6 +1,5 @@
 ﻿using BusinessLogics.BindingModels;
 using BusinessLogics.BusinessLogic;
-using BusinessLogics.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,12 +11,12 @@ using Unity;
 
 namespace Forms
 {
-    public partial class FormWaiter : Form
+    public partial class FormType : Form
     {
         [Dependency]
         public new IUnityContainer Container { get; set; }
-        private readonly WaiterLogic logic;
-        public FormWaiter(WaiterLogic _logic)
+        private readonly TypeLogic logic;
+        public FormType(TypeLogic _logic)
         {
             logic = _logic;
             InitializeComponent();
@@ -51,9 +50,9 @@ namespace Forms
                 {
                     case Keys.I:
                         {
-                            logic.CreateOrUpdate(new WaiterBindingModel
+                            logic.CreateOrUpdate(new TypeBindingModel
                             {
-                                WaiterFullName = ""
+                                TypeName = ""
                             });
                             LoadData();
                             break;
@@ -67,7 +66,7 @@ namespace Forms
                                     int id = Convert.ToInt32(dataGridView.SelectedRows[0].Cells[0].Value);
                                     try
                                     {
-                                        logic.Delete(new WaiterBindingModel { Id = id });
+                                        logic.Delete(new TypeBindingModel { Id = id });
                                     }
                                     catch (Exception ex)
                                     {
@@ -91,7 +90,7 @@ namespace Forms
                     try
                     {
                         var id = (int)dataGridView[0, e.RowIndex].Value;
-                        logic.CreateOrUpdate(new WaiterBindingModel { Id = id, WaiterFullName = typeName });
+                        logic.CreateOrUpdate(new TypeBindingModel { Id = id, TypeName = typeName });
                     }
                     catch (Exception ex)
                     {
@@ -112,16 +111,14 @@ namespace Forms
         {
             if (e.KeyCode == Keys.Insert)
             {
-                /*AddRow();*/
-                logic.CreateOrUpdate(new WaiterBindingModel
+                logic.CreateOrUpdate(new TypeBindingModel
                 {
-                    WaiterFullName = ""
+                    TypeName = ""
                 });
                 LoadData();
             }
             if (e.KeyCode == Keys.Delete)
             {
-                /* DeleteWaiter();*/
                 if (dataGridView.SelectedRows.Count == 1)
                 {
                     if (MessageBox.Show("Удалить запись", "Вопрос", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
@@ -129,7 +126,7 @@ namespace Forms
                         int id = Convert.ToInt32(dataGridView.SelectedRows[0].Cells[0].Value);
                         try
                         {
-                            logic.Delete(new WaiterBindingModel { Id = id });
+                            logic.Delete(new TypeBindingModel { Id = id });
                         }
                         catch (Exception ex)
                         {
@@ -138,10 +135,6 @@ namespace Forms
                         LoadData();
                     }
                 }
-            }
-            if (e.KeyCode == Keys.Enter)
-            {
-                /*AddWaiter();*/
             }
         }
     }

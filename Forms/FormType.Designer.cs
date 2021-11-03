@@ -1,7 +1,7 @@
 ﻿
 namespace Forms
 {
-    partial class FormWaiter
+    partial class FormType
     {
         /// <summary>
         /// Required designer variable.

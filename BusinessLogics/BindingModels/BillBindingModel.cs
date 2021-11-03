@@ -1,5 +1,4 @@
-﻿using BusinessLogics.Enums;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -15,13 +14,13 @@ namespace BusinessLogics.BindingModels
         /// </summary>
         public int? Id { get; set; }
         /// <summary>
-        /// Тип заказа
+        /// ФИО офицанта
         /// </summary>
-        public string Type { get; set; }
+        public string WaiterFullName { get; set; }
         /// <summary>
-        /// ID официанта
+        /// ID типа
         /// </summary>
-        public int WaiterId { get; set; }
+        public int TypeId { get; set; }
         /// <summary>
         /// Информация по счёту
         /// </summary>
@@ -30,7 +29,5 @@ namespace BusinessLogics.BindingModels
         /// Сумма заказа
         /// </summary>
         public decimal? Sum { get; set; }
-
-
     }
 }

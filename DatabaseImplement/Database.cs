@@ -9,12 +9,12 @@ namespace DatabaseImplement
         {
             if (optionsBuilder.IsConfigured == false)
             {
-                optionsBuilder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CafeDatabase5;Integrated Security=True;MultipleActiveResultSets=True;");
+                optionsBuilder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CafeDatabase6;Integrated Security=True;MultipleActiveResultSets=True;");
             }
             base.OnConfiguring(optionsBuilder);
         }
         public virtual DbSet<Bill> Bills { set; get; }
 
-        public virtual DbSet<Waiter> Waiters { set; get; }
+        public virtual DbSet<Type> Types { set; get; }
     }
 }

@@ -37,9 +37,9 @@ namespace Forms
             this.buttonSave = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboboxControlWaiter = new PavComponents.ComboboxControl();
+            this.comboboxControlType = new PavComponents.ComboboxControl();
             this.input_Component1 = new PavComponents.Input_Component();
+            this.textBoxName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -47,9 +47,9 @@ namespace Forms
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(11, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 17);
+            this.label1.Size = new System.Drawing.Size(86, 17);
             this.label1.TabIndex = 0;
-            this.label1.Text = "ФИО офицанта:";
+            this.label1.Text = "Тип заказа:";
             // 
             // label2
             // 
@@ -59,16 +59,15 @@ namespace Forms
             this.label2.Size = new System.Drawing.Size(98, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "Информация:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(11, 71);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 17);
+            this.label3.Size = new System.Drawing.Size(111, 17);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Тип заказа:";
+            this.label3.Text = "Фио офицанта:";
             // 
             // label4
             // 
@@ -117,23 +116,15 @@ namespace Forms
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // comboBox1
+            // comboboxControlType
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(182, 74);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(307, 24);
-            this.comboBox1.TabIndex = 12;
-            // 
-            // comboboxControlWaiter
-            // 
-            this.comboboxControlWaiter.Location = new System.Drawing.Point(182, 8);
-            this.comboboxControlWaiter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboboxControlWaiter.Name = "comboboxControlWaiter";
-            this.comboboxControlWaiter.SelectedIndex = 0;
-            this.comboboxControlWaiter.SelectedValue = "";
-            this.comboboxControlWaiter.Size = new System.Drawing.Size(310, 28);
-            this.comboboxControlWaiter.TabIndex = 11;
+            this.comboboxControlType.Location = new System.Drawing.Point(182, 8);
+            this.comboboxControlType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboboxControlType.Name = "comboboxControlType";
+            this.comboboxControlType.SelectedIndex = 0;
+            this.comboboxControlType.SelectedValue = "";
+            this.comboboxControlType.Size = new System.Drawing.Size(310, 28);
+            this.comboboxControlType.TabIndex = 11;
             // 
             // input_Component1
             // 
@@ -143,13 +134,20 @@ namespace Forms
             this.input_Component1.Size = new System.Drawing.Size(383, 32);
             this.input_Component1.TabIndex = 7;
             // 
+            // textBoxName
+            // 
+            this.textBoxName.Location = new System.Drawing.Point(182, 83);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(307, 22);
+            this.textBoxName.TabIndex = 12;
+            // 
             // FormBill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 144);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.comboboxControlWaiter);
+            this.Controls.Add(this.textBoxName);
+            this.Controls.Add(this.comboboxControlType);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.buttonSave);
@@ -179,7 +177,7 @@ namespace Forms
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private PavComponents.ComboboxControl comboboxControlWaiter;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private PavComponents.ComboboxControl comboboxControlType;
+        private System.Windows.Forms.TextBox textBoxName;
     }
 }

@@ -1,5 +1,4 @@
-﻿using BusinessLogics.Enums;
-using System;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace DatabaseImplement.Models
@@ -15,35 +14,29 @@ namespace DatabaseImplement.Models
         public int Id { get; set; }
 
         /// <summary>
-        /// ID официанта
+        /// ID типа
         /// </summary>
         [Required]
-        public int WaiterId { get; set; }
+        public int TypeId { get; set; }
 
         /// <summary>
-        /// Тип заказа
+        /// ФИО офицанта
         /// </summary>
         [Required]
-        public string Type { get; set; }
+        public string WaiterFullName { get; set; }
 
         /// <summary>
         /// Сумма заказа
         /// </summary>
         public decimal Sum { get; set; }       
         /// <summary>
-        /// Номер столика
-        /// </summary>
-        [Required]
-        public int TableId { get; set; }
-
-        /// <summary>
         /// Информация о заказе
         /// </summary>
         public string Info { get; set; }
 
         /// <summary>
-        /// Офицант
+        /// Тип заказа
         /// </summary>
-        public virtual Waiter Waiter { get; set; }
+        public virtual Type Type { get; set; }
     }
 }

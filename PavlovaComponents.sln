@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PavlovaComponents", "PavlovaComponents\PavlovaComponents.csproj", "{220705F6-AA6F-4657-A4EA-F34778C3535B}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLogics", "BusinessLogics\BusinessLogics.csproj", "{CF7E3DC3-4731-4478-8D06-9D100DF1BC29}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatabaseImplement", "DatabaseImplement\DatabaseImplement.csproj", "{CE2FF83E-215C-462C-8D68-8FC269F30A0E}"
@@ -19,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{220705F6-AA6F-4657-A4EA-F34778C3535B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{220705F6-AA6F-4657-A4EA-F34778C3535B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{220705F6-AA6F-4657-A4EA-F34778C3535B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{220705F6-AA6F-4657-A4EA-F34778C3535B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CF7E3DC3-4731-4478-8D06-9D100DF1BC29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CF7E3DC3-4731-4478-8D06-9D100DF1BC29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF7E3DC3-4731-4478-8D06-9D100DF1BC29}.Release|Any CPU.ActiveCfg = Release|Any CPU

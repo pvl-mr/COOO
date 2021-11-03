@@ -23,13 +23,13 @@ namespace DatabaseImplement.Implements
             using (var context = new Database())
             {
                 return context.Bills
-                    .Include(bill => bill.Waiter)
+                    .Include(bill => bill.Type)
                     .Select(bill => new BillViewModel
                     {
                         Id = bill.Id,
-                        WaiterId = bill.WaiterId,
-                        WaiterFullName = bill.Waiter.WaiterFullName,
-                        Type = bill.Type,
+                        TypeId = bill.TypeId,
+                        TypeName = bill.Type.TypeName,
+                        WaiterFullName = bill.WaiterFullName,
                         Info = bill.Info,
                         Sum = bill.Sum.ToString()
                     })
@@ -53,13 +53,13 @@ namespace DatabaseImplement.Implements
             {
                 return context.Bills
                     .Where(bill => bill.Sum == model.Sum)
-                    .Include(bill => bill.Waiter)
+                    .Include(bill => bill.Type)
                     .Select(bill => new BillViewModel
                     {
                         Id = bill.Id,
-                        WaiterId = bill.WaiterId,
-                        WaiterFullName = bill.Waiter.WaiterFullName,
-                        Type = bill.Type,
+                        TypeId = bill.TypeId,
+                        TypeName = bill.Type.TypeName,
+                        WaiterFullName = bill.WaiterFullName,
                         Info = bill.Info,
                         Sum = bill.Sum.ToString()
                     })
@@ -81,15 +81,15 @@ namespace DatabaseImplement.Implements
 
             using (var context = new Database())
             {
-                var tempBill = context.Bills.Include(bill => bill.Waiter).FirstOrDefault(bill => bill.Id == model.Id);
+                var tempBill = context.Bills.Include(bill => bill.Type).FirstOrDefault(bill => bill.Id == model.Id);
 
                 return tempBill != null ?
                     new BillViewModel
                     {
                         Id = tempBill.Id,
-                        WaiterId = tempBill.WaiterId,
-                        WaiterFullName = tempBill.Waiter.WaiterFullName,
-                        Type = tempBill.Type,
+                        TypeId = tempBill.TypeId,
+                        TypeName = tempBill.Type.TypeName,
+                        WaiterFullName = tempBill.WaiterFullName,
                         Info = tempBill.Info,
                         Sum = tempBill.Sum.ToString()
                     } : null;
@@ -157,8 +157,8 @@ namespace DatabaseImplement.Implements
         /// <returns>Модель счета</returns>
         private Bill CreateModel(BillBindingModel model, Bill bill)
         {
-            bill.WaiterId = model.WaiterId;
-            bill.Type = model.Type.ToString();
+            bill.TypeId = model.TypeId;
+            bill.WaiterFullName = model.WaiterFullName.ToString();
             bill.Info = model.Info;
             bill.Sum = (decimal)model.Sum;
             return bill;

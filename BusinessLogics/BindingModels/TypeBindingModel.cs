@@ -4,16 +4,16 @@ using System.Text;
 
 namespace BusinessLogics.BindingModels
 {
-    public class WaiterBindingModel
+    public class TypeBindingModel
     {
         /// <summary>
-        /// ID официанта
+        /// ID типа заказа
         /// </summary>
         public int? Id { get; set; }
 
         /// <summary>
-        /// ФИО официанта
+        /// Тип заказа
         /// </summary>
-        public string WaiterFullName { get; set; }
+        public string TypeName { get; set; }
     }
 }

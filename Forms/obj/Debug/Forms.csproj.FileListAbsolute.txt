@@ -99,7 +99,6 @@ C:\Users\pavlo\source\repos\PavlovaComponents\Forms\obj\Debug\Forms.csproj.CopyC
 C:\Users\pavlo\source\repos\PavlovaComponents\Forms\obj\Debug\Forms.exe
 C:\Users\pavlo\source\repos\PavlovaComponents\Forms\obj\Debug\Forms.pdb
 C:\Users\pavlo\source\repos\PavlovaComponents\Forms\obj\Debug\Forms.FormBill.resources
-C:\Users\pavlo\source\repos\PavlovaComponents\Forms\obj\Debug\Forms.FormWaiter.resources
 C:\Users\pavlo\source\repos\PavlovaComponents\Forms\obj\Debug\Forms.MainForm.resources
 C:\Users\pavlo\source\repos\PavlovaComponents\Forms\bin\Debug\itextsharp.dll
 C:\Users\pavlo\source\repos\PavlovaComponents\Forms\bin\Debug\LiveCharts.Wpf.dll
@@ -110,3 +109,4 @@ C:\Users\pavlo\source\repos\PavlovaComponents\Forms\bin\Debug\LiveCharts.Wpf.pdb
 C:\Users\pavlo\source\repos\PavlovaComponents\Forms\bin\Debug\LiveCharts.Wpf.xml
 C:\Users\pavlo\source\repos\PavlovaComponents\Forms\bin\Debug\LiveCharts.pdb
 C:\Users\pavlo\source\repos\PavlovaComponents\Forms\bin\Debug\LiveCharts.xml
+C:\Users\pavlo\source\repos\PavlovaComponents\Forms\obj\Debug\Forms.FormType.resources

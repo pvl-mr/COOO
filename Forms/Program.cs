@@ -29,7 +29,7 @@ namespace Forms
             var currentContainer = new UnityContainer();
 
             currentContainer.RegisterType<IBillStorage, BillStorage>(new HierarchicalLifetimeManager());
-            currentContainer.RegisterType<IWaiterStorage, WaiterStorage>(new HierarchicalLifetimeManager());
+            currentContainer.RegisterType<ITypeStorage, TypeStorage>(new HierarchicalLifetimeManager());
 
             return currentContainer;
         }

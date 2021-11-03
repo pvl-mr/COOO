@@ -4,23 +4,23 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DatabaseImplement.Models
 {
-    public class Waiter
+    public class Type
     {
         /// <summary>
-        /// ID счета
+        /// ID типа заказа
         /// </summary>
         public int Id { get; set; }
 
         /// <summary>
-        /// ФИО официаета
+        /// Название типа заказа
         /// </summary>
         [Required]
-        public string WaiterFullName { get; set; }
+        public string TypeName { get; set; }
 
         /// <summary>
-        /// В каких счетах присутствует этот официант
+        /// В каких счетах присутствует этот тип
         /// </summary>
-        [ForeignKey("WaiterId")]
+        [ForeignKey("TypeId")]
         public virtual List<Bill> Bill { get; set; }
     }
 }

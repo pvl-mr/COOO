@@ -1,5 +1,4 @@
-﻿using BusinessLogics.Enums;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
@@ -11,18 +10,19 @@ namespace BusinessLogics.ViewModels
         /// <summary>
         /// ID счета в кафе
         /// </summary>
-        /// [DisplayName("Номер счета")]
+        [DisplayName("Номер счета")]
         public int Id { get; set; }
         /// <summary>
         /// Тип заказа
         /// </summary>
-        public string Type { get; set; }
+        [DisplayName("ФИО офицанта")]
+        public string WaiterFullName { get; set; }
         /// <summary>
         /// ID официанта
         /// </summary>
-        public int WaiterId { get; set; }
-        [DisplayName("ФИО официанта")]
-        public string WaiterFullName { get; set; }
+        public int TypeId { get; set; }
+        [DisplayName("Тип заказа")]
+        public string TypeName { get; set; }
         /// <summary>
         /// Информация по счёту
         /// </summary>

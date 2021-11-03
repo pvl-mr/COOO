@@ -5,17 +5,17 @@ using System.Text;
 
 namespace BusinessLogics.ViewModels
 {
-    public class WaiterViewModel
+    public class TypeViewModel
     {
         /// <summary>
-        /// ID официанта
+        /// ID типа заказа
         /// </summary>
         public int Id { get; set; }
 
         /// <summary>
-        /// ФИО официанта
+        /// Название типа заказа
         /// </summary>
-        [DisplayName("ФИО официанта")]
-        public string WaiterFullName { get; set; }
+        [DisplayName("Тип заказа")]
+        public string TypeName { get; set; }
     }
 }
