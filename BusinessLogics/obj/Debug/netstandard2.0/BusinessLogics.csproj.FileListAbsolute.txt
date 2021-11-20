@@ -7,3 +7,4 @@ C:\Users\pavlo\source\repos\PavlovaComponents\BusinessLogics\obj\Debug\netstanda
 C:\Users\pavlo\source\repos\PavlovaComponents\BusinessLogics\obj\Debug\netstandard2.0\BusinessLogics.csproj.CoreCompileInputs.cache
 C:\Users\pavlo\source\repos\PavlovaComponents\BusinessLogics\obj\Debug\netstandard2.0\BusinessLogics.dll
 C:\Users\pavlo\source\repos\PavlovaComponents\BusinessLogics\obj\Debug\netstandard2.0\BusinessLogics.pdb
+C:\Users\pavlo\source\repos\PavlovaComponents\BusinessLogics\obj\Debug\netstandard2.0\BusinessLogics.csproj.AssemblyReference.cache

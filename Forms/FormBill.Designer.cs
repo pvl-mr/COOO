@@ -36,10 +36,11 @@ namespace Forms
             this.textBoxDescription = new System.Windows.Forms.TextBox();
             this.buttonSave = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonCatalog = new System.Windows.Forms.Button();
             this.comboboxControlType = new PavComponents.ComboboxControl();
             this.input_Component1 = new PavComponents.Input_Component();
             this.textBoxName = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -106,15 +107,15 @@ namespace Forms
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // buttonCatalog
             // 
-            this.button1.Location = new System.Drawing.Point(506, 14);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 33);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Справочник";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonCatalog.Location = new System.Drawing.Point(506, 14);
+            this.buttonCatalog.Name = "buttonCatalog";
+            this.buttonCatalog.Size = new System.Drawing.Size(116, 33);
+            this.buttonCatalog.TabIndex = 10;
+            this.buttonCatalog.Text = "Справочник";
+            this.buttonCatalog.UseVisualStyleBackColor = true;
+            this.buttonCatalog.Click += new System.EventHandler(this.button1_Click);
             // 
             // comboboxControlType
             // 
@@ -141,6 +142,16 @@ namespace Forms
             this.textBoxName.Size = new System.Drawing.Size(307, 22);
             this.textBoxName.TabIndex = 12;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(506, 14);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(116, 33);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Справочник";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormBill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -148,7 +159,7 @@ namespace Forms
             this.ClientSize = new System.Drawing.Size(634, 144);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.comboboxControlType);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonCatalog);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.input_Component1);
@@ -176,8 +187,9 @@ namespace Forms
         private PavComponents.Input_Component input_Component1;
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonCatalog;
         private PavComponents.ComboboxControl comboboxControlType;
         private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.Button button1;
     }
 }
